@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Otter's Haven</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Practice, html, css">
+  <meta name="description" content="A simple practice site.">
+  <meta name="author" content="Joshua Bills">
+  <link rel="stylesheet" href="otter.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div>Welcome to Otter's Haven</div>
+    <ul>
+      <li><a href="#">Welcome</a></li>
+      <li><a href="#otter-info">Info</a></li>
+      <li><a href="#footer">Social</a></li>
+      <li><a href="../">Home</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="hero-image-wrapper shadow">
+      <div class="hero-image">
+        <figure>
+          <img src="img/otter.jpg" alt="otter laying on back">
+          <div class="hero-image-text">
+            <h2>You otter say hello</h2>
+            <figcaption>Photo credit: <a href="https://wallpaperaccess.com/" style="text-decoration: underline;">WallpaperAccess</a></figcaption>
+          </div>
+        </figure>
+      </div>
+    </div>
+
+    <a href="" id="otter-info"></a>
+    <article>
+      <h2 class="border-round otter-info-header shadow">Otter Info</h2>
+      <section class="otter-info">
+
+        <div class="border-round-card otter-info-border otter-info-overview shadow">
+          <div class="otter-info-overview-header">Otter Facts</div>
+          <div class="otter-info-overview-text" style="border-radius: 0;">
+            <p>The information found on this page was obtained from the <a href="https://en.wikipedia.org/wiki/Otter" style="text-decoration: underline;">otter Wikipedia page</a>.</p>
+            <br>
+            <ul>
+              <li>An otter's den is called a holt or clutch.</li>
+              <li>They are notable for their ability to use stones to break open shellfish on their stomachs. This skill must be learned by the young.</li>
+              <li>Prey-dependence leaves otters very vulnerable to prey depletion.</li>
+            </ul>
+          </div>
+          <div class="otter-info-overview-header">Odder Facts</div>
+          <div class="otter-info-overview-text">
+            <ul>
+              <li>Otters have been known to make and enjoy their own water slides.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-round-card otter-card-diet otter-info-border shadow">
+          <div>Diet</div>
+          <ul>
+            <li>Fish</li>
+            <li>Shellfish</li>
+            <li>Crayfish</li>
+            <li>Crab</li>
+          </ul>
+        </div>
+
+        <table class="border-round-card otter-info-border otter-info-table shadow" cellspacing="0">
+          <thead>
+            <tr>
+              <th colspan="2" class="border-round otter-info-table-head">Life Stats</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Life Expectancy</th>
+              <td>16 years</td>
+            </tr>
+            <tr>
+              <th>Sexual Maturity:<br>Female</th>
+              <td>2 years</td>
+            </tr>
+            <tr>
+              <th>Sexual Maturity:<br>Male</th>
+              <td>3 years</td>
+            </tr>
+            <tr>
+              <th>Gestation</th>
+              <td>2-3 months</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+    </article>
+
+    <footer id="footer">
+      <div class="border-round footer shadow">
+        <a class="footer-icon" href="https://github.com/JBillsDev"><img alt="github" style="width:48px; height:48px;" src="../res/img/github-mark-small.svg"></a>
+        <a class="footer-icon" href="https://www.linkedin.com/in/joshua-t-bills/"><img alt="linked-in" style="width:48px; height:48px;" src="../res/img/linked-in.svg"></a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
