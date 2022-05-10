@@ -33,9 +33,14 @@
   padding: 0;
 }
 
-@media screen {
+@media screen and (max-width: 500px) {
   body {
     padding: var(--margin-top-ext) 0 0;
+  }
+  
+  .listing-body {
+    flex-direction: column;
+    width: 350px;
   }
 
   .listing-image {
@@ -44,11 +49,16 @@
     width: 250px;
   }
 
+  .listing-text {
+    border-top: solid var(--border-size) var(--color-contrast);
+    padding: 20px 0 0;
+  }
+
   .navbar {
     border-top: solid var(--border-size) var(--color-contrast);
     box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.2);
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
     height: var(--nav-height);
     width: auto;
     right: 0;
@@ -58,6 +68,8 @@
   .nav-list {
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 0 20px 0;
   }
 
@@ -70,16 +82,26 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 501px) and (max-width: 800px) {
   body {
     padding: var(--margin-top-ext) 0 0;
+  }
+  
+  .listing-body {
+    flex-direction: column;
+    width: 400px;
+  }
+
+  .listing-text {
+    border-top: solid var(--border-size) var(--color-contrast);
+    padding: 20px 0 0;
   }
 
   .navbar {
     border-top: solid var(--border-size) var(--color-contrast);
     box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.2);
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
     height: var(--nav-height);
     width: auto;
     right: 0;
@@ -89,6 +111,8 @@
   .nav-list {
     align-items: center;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
     padding: 0 20px 0;
   }
 
@@ -104,6 +128,16 @@
 @media (min-width: 801px) {
   body {
     padding: var(--margin-top) 0 0 var(--nav-width);
+  }
+  
+  .listing-body {
+    flex-direction: row;
+    width: 500px;
+  }
+
+  .listing-text {
+    border-left: solid var(--border-size) var(--color-contrast);
+    padding: 0 0 0 30px;
   }
 
   .navbar {
@@ -124,6 +158,8 @@
   .nav-list {
     align-items: flex-start;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: initial;
     padding: 16px 0 0 10px;
   }
 
@@ -188,8 +224,6 @@ footer {
 
 .listing {
   background-color: var(--color-backdrop);
-  max-width: 500px;
-  min-width: 500px;
   overflow: hidden;
   display: block;
 }
@@ -207,6 +241,7 @@ footer {
 }
 
 .listing-image {
+  align-self: center;
   margin: auto 20px auto 0;
   height: 300px;
   width: 250px;
@@ -220,11 +255,9 @@ footer {
 }
 
 .listing-text {
-  border-left: solid var(--border-size) var(--color-contrast);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 30px;
 }
 
 .listing-title {
