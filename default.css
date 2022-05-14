@@ -200,6 +200,10 @@ footer {
   border-radius: var(--border-rad);
 }
 
+.border-solid {
+  
+}
+
 .footer {
   border: solid var(--border-size) var(--color-font-light);
   display: flex;
